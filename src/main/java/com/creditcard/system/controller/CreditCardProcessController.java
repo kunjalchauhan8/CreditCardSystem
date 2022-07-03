@@ -25,7 +25,7 @@ public class CreditCardProcessController {
 	@Autowired
 	CreditCardProcessRepository creditCardProcessRepository;
 
-	@GetMapping("/credit/getAll")
+	@GetMapping("/credit/get")
 	public ResponseEntity<List<CreditCard>> getAllCreditCardDetails() {
 		try {
 			List<CreditCard> creditCards = new ArrayList<>();
